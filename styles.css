@@ -64,6 +64,13 @@ body {
     position: relative;
 }
 
+.portfolio-img-background {
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .img-text-wrapper {
     position: absolute;
     top: 0;
