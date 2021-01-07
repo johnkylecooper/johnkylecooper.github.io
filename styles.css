@@ -124,3 +124,16 @@ body {
     color: lightseagreen
 }
 
+/* Spotify Page */
+.three-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.spotify-song-wrapper {
+    position: relative;
+}
+
+.spotify-player-wrapper{
+    background-position: center;
+}
