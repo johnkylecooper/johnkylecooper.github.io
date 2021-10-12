@@ -114,6 +114,7 @@ body {
 
 .profile-image-wrapper img {
     width: 100%;
+    height: flex;
 }
 
 .profile-content-wrapper {
