@@ -136,12 +136,12 @@ body {
 
 .blog-text-wrapper {
     position: relative;
-    top: 25%;
+    top: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50%;
+    height: flex;
     text-align: center;
     padding-left: 25%;
     padding-right: 25%;
