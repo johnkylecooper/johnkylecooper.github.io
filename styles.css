@@ -135,6 +135,7 @@ body {
 }
 
 .blog-text-wrapper {
+    margin: auto;
     position: relative;
     top: flex;
     display: flex;
