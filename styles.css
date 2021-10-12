@@ -144,8 +144,8 @@ body {
     align-items: center;
     height: flex;
     text-align: center;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .blog-text-wrapper h1 {
