@@ -13,37 +13,43 @@ body {
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 2.5vw;
 }
 
 .left-side {
     display: flex;
 }
 
+.right-side {
+    display: flex;
+    font-size: 1vw;
+}
+
 .nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
+    margin-right: 2vw;
+    font-size: 1vw;
     text-transform: uppercase;
 }
 
 .nav-link-wrapper {
-    height: 22px;
+    height: 2vw;
     border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+    transition: border-bottom 1s;
 }
 
 .nav-link-wrapper a {
     color: #8a8a8a;
     text-decoration: none;
-    transition: color 0.5s;
+    transition: color 1s, margin 1s;
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 0.1vh solid black;
 }
 
 .nav-link-wrapper a:hover {
     color: black;
+    margin: 2vh;
 }
 
 .active-nav-link {
@@ -56,6 +62,8 @@ body {
 
 /* Portfolio styles */
 .portfolio-items-wrapper {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -65,11 +73,13 @@ body {
 }
 
 .portfolio-img-background {
-    height: 1000px;
-    width: 100%;
+    height: 75vh;
+    width: 25vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 1vw;
+    transition: transform .5s, filter .5s;
 }
 
 .img-text-wrapper {
@@ -83,6 +93,7 @@ body {
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
+    transition: transform .5s;
 }
 
 .logo-wrapper img {
@@ -90,20 +101,23 @@ body {
     margin-bottom: 20px;
 }
 
+.portfolio-item-wrapper:hover .portfolio-img-background {
+    transform: scale(1.2);
+    filter: brightness(50%);
+}
+
+.portfolio-item-wrapper:hover .img-text-wrapper {
+    transform: scale(1.2);
+}
+
 .img-text-wrapper .subtitle {
-    transition: 1s;
-    font-weight: 600;
+    font-size: 2vw;
     color: transparent;
+    transition: color 0.5s;
 }
 
-.img-text-wrapper:hover .subtitle {
-    font-weight: 600;
-    color: lightseagreen;
-}
-
-.img-darken {
-    transition: 1s;
-    filter: brightness(10%);
+.portfolio-item-wrapper :hover .img-text-wrapper .subtitle{
+    color: lightskyblue;
 }
 
 /* About page */
@@ -113,16 +127,27 @@ body {
 }
 
 .profile-image-wrapper img {
-    width: 100%;
+    width: 50vw;
     height: flex;
+    margin: 1vw;
+    border-radius: 25px;
 }
 
 .profile-content-wrapper {
-    padding: 30px;
+    margin: 1vw;
+}
+
+.profile-content-wrapper h2, p {
+    border-radius: 25px;
+    background-color: lightskyblue;
+    height: auto;
+    padding: 2vh;
+    font-size: 1.5vw;
 }
 
 .profile-content-wrapper h1 {
-    color: lightseagreen
+    color: lightskyblue;
+    font-size: 2vw;
 }
 
 /* Spotify Page */
@@ -135,19 +160,61 @@ body {
     position: relative;
 }
 
-.blog-text-wrapper {
-    margin: auto;
-    position: relative;
-    top: flex;
+/* Blog Pages */
+
+.blog-text-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: flex;
-    width: 50%;
-    text-align: center;
 }
 
-.blog-text-wrapper h1 {
-    color: lightseagreen
+.blog-toc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.blog-toc-container div {
+    border-radius: 25px;
+    background-color: lightskyblue;
+    height: auto;
+    margin: 1vw;
+    padding: 20px;
+    font-size: 1.5vw;
+    transition: transform 0.5s;
+}
+
+.blog-toc-container h1 {
+    color: lightskyblue;
+    font-size: 3vw;
+}
+
+.blog-toc-container div:hover {
+    transform: scale(1.2);
+}
+
+.blog-text-container div {
+    border-radius: 25px;
+    background-color: lightskyblue;
+    height: auto;
+    margin: 1vw;
+    padding: 20px;
+    font-size: 1.5vw;
+    transition: transform 0.5s;
+}
+
+.blog-text-container p, a {
+    color: black;
+}
+
+.blog-text-container h1 {
+    color: lightskyblue;
+    font-size: 3vw;
+}
+
+.blog-text-container h2 {
+    color: black;
+    font-size: 2vw;
+}
+
+
