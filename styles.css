@@ -138,11 +138,6 @@ body {
 }
 
 .profile-content-wrapper h2, p {
-    border-radius: 25px;
-    background-color: lightskyblue;
-    height: auto;
-    padding: 2vh;
-    font-size: 1.5vw;
 }
 
 .profile-content-wrapper h1 {
@@ -175,13 +170,8 @@ body {
 }
 
 .blog-toc-container div {
-    border-radius: 25px;
-    background-color: lightskyblue;
-    height: auto;
     margin: 1vw;
-    padding: 20px;
-    font-size: 1.5vw;
-    transition: transform 0.5s;
+    font-size: 2vw;
 }
 
 .blog-toc-container h1 {
@@ -194,13 +184,10 @@ body {
 }
 
 .blog-text-container div {
-    border-radius: 25px;
-    background-color: lightskyblue;
-    height: auto;
-    margin: 1vw;
-    padding: 20px;
-    font-size: 1.5vw;
-    transition: transform 0.5s;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 5vw;
+    font-size: 1vw;
 }
 
 .blog-text-container p, a {

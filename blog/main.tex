@@ -1,0 +1,95 @@
+\documentclass[oneside, 12pt]{book}
+\usepackage[utf8]{inputenc}
+
+\usepackage[pass]{geometry}
+\usepackage{xpatch}
+\newlength{\chaptertopskip}
+\setlength{\chaptertopskip}{10pt}
+\makeatletter
+\xpatchcmd{\@makechapterhead}{\vspace*{50\p@}}{\vspace*{\chaptertopskip}}{\typeout{Success}}{\typeout{Failure!!!}}
+\makeatother
+
+\usepackage{tocloft}
+
+\title{Kyle's Bioscience Journal}
+\author{John Kyle Cooper}
+\date{May 2020}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\tableofcontents
+\addtocontents{toc}{~\vspace{-3\baselineskip}}
+
+\mainmatter
+\chapter{Embarking On A Journey}
+\textbf{Tuesday, January 10, 2017}\\\\
+\input{chapters/chapter01}
+
+\chapter[Week 1: "Adventure Of A Lifetime"]{Week 1:\\"Adventure Of A Lifetime"
+}
+\textbf{Sunday, January 22, 2017}\\\\
+\input{chapters/chapter02}
+
+\chapter{Week 2: Köln}
+\textbf{Sunday, February 12, 2017}\\\\
+\input{chapters/chapter03}
+
+\chapter{Week 3: Vienna}
+\textbf{Sunday, February 12, 2017}\\\\
+\input{chapters/chapter04}
+
+\chapter{Week 4: Prague}
+\textbf{Sunday, February 12, 2017}\\\\
+\input{chapters/chapter05}
+
+\chapter{Week 5: Siegburg und Fußball}
+\textbf{Sunday, February 12, 2017}\\\\
+\input{chapters/chapter06}
+
+\chapter{Week 5 (Lol Whoops): Munich}
+\textbf{Monday, May 1, 2017}\\\\
+\input{chapters/chapter07}
+
+\chapter{Week 6: Karneval! Alaaf!}
+\textbf{February 23-27, 2017}\\\\
+\input{chapters/chapter08}
+
+\chapter{Week 7: Berlin Weekend (Before Paris Excursion)}
+\textbf{March 3-5, 2017}\\\\
+\input{chapters/chapter09}
+
+\chapter{Week 8: Paris Excursion!}
+\textbf{March 6-10, 2017}\\\\
+\input{chapters/chapter10}
+
+\chapter[Week 9: Spring Break]{Week 9: Spring Break (A Wild Trip Around Western Europe)}
+\textbf{March 11-18, 2017}\\\\
+\input{chapters/chapter11}
+
+\chapter{Week 10: Big Event Weekend!}
+\textbf{April 24 - 26, 2017}\\\\
+\input{chapters/chapter12}
+
+\chapter{Week 11: Surgeries, Cousin's Abroad $\&$ Bonn Marathon!}
+\textbf{March 31 - April 2, 2017}\\\\
+\input{chapters/chapter13}
+
+\chapter{Week 12: Amsterdam!}
+\textbf{April 7-9, 2017}\\\\
+\input{chapters/chapter14}
+
+\chapter{Week 13: Easter Adventure In Belgium!}
+\textbf{April 14-17, 2017}\\\\
+\input{chapters/chapter15}
+
+\chapter{Week 14: Budapest (During Finals? You're Crazy!)}
+\textbf{April 21-24, 2017}\\\\
+\input{chapters/chapter16}
+
+\chapter{Week 15: The Final Days Of The Hero's Journey}
+\textbf{Monday, May 1, 2017}\\\\
+\input{chapters/chapter17}
+
+\end{document}
