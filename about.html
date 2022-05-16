@@ -1,70 +1,217 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="nav-wrapper">
-            <div class="left-side">
-                <div class="nav-link-wrapper">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="nav-link-wrapper">
-                    <a href="blog.html">Blog</a>
-                </div>
-                <div class="nav-link-wrapper active-nav-link">
-                    <a href="about.html">About</a>
-                </div>
-            </div>
-            <div class="right-side">
-                <div class="brand">
-                    <div>JOHN KYLE COOPER</div>
-                </div>
-            </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sora:800"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/77927b8d22.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .image-container {
+        position: absolute;
+        background-image: url(lukas-blazek-GnvurwJsKaY-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 50%;
+        width: 100%;
+        height: 100vh;
+        z-index: 0;
+      }
+      .grid-container {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 9vw auto;
+        width: 100%;
+        height: 100vh;
+        z-index: 0;
+      }
+      .three-column-grid {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 10vw auto;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        z-index: 1;
+      }
+      .three-row-grid {
+        display: grid;
+        grid-template-columns: auto 10%;
+        grid-template-rows: auto auto auto;
+        justify-content: right;
+        row-gap: 5vh;
+      }
+      .four-by-four-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        gap: 7vh;
+      }
+      .grid-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .left {
+        padding: 10px;
+        font-size: max(2.5vw, 20px);
+      }
+      .right {
+        font-size: min(15vw, 300px);
+      }
+      .icon {
+        transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out,
+          color 0.25s ease-in-out;
+      }
+      #text {
+        font-family: Sora;
+        white-space: nowrap;
+        justify-content: left;
+        color: #966f5d;
+        opacity: 0%;
+        transform: scale(0.75);
+        transition: transform 0.5s ease-in-out, opacity 0.25s ease-in-out;
+      }
+      #inner-text {
+        font-family: Sora;
+        position: absolute;
+        top: -5vw;
+        transform: scale(0);
+        font-size: 3vw;
+        color: #966f5d;
+        opacity: 0%;
+        transition: transform 0.5s ease-in-out, opacity 0.25s ease-in-out;
+      }
+      .active,
+      .icon:hover {
+        opacity: 75%;
+        color: #966f5d;
+        transform: scale(0.95);
+      }
+      .icon:hover + #text {
+        opacity: 75%;
+        transform: scale(1);
+      }
+      .icon:hover > #inner-text {
+        opacity: 100%;
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container"></div>
+    <div class="grid-container">
+      <div
+        style="
+          white-space: nowrap;
+          margin: 2vw;
+          font-family: Sora;
+          font-size: 3vw;
+          color: rgb(150, 111, 93);
+        "
+      >
+        JKC
+      </div>
+      <div></div>
+    </div>
+    <div class="three-column-grid">
+      <div class="three-row-grid">
+        <a
+          class="icon"
+          href="index.html"
+          style="color: black; text-decoration: none"
+          ><div class="grid-item left icon">
+            <i class="fa-solid fa-house"></i>
+          </div>
+        </a>
+        <div class="grid-item left" id="text">home</div>
+        <a
+          class="icon"
+          href="blog.html"
+          style="color: black; text-decoration: none"
+          ><div class="grid-item left icon">
+            <i class="fa-solid fa-feather"></i></div
+        ></a>
+        <div class="grid-item left" id="text">blog</div>
+        <a
+          class="icon"
+          href="about.html"
+          style="color: black; text-decoration: none"
+          ><div class="grid-item left icon active">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </a>
+        <div class="grid-item left" id="text">about me</div>
+      </div>
+      <div
+        style="
+          display: grid;
+          grid-template-rows: auto auto;
+          justify-content: center;
+          align-items: center; row-gap: 20px;
+          "
+          >
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <img src="eeg.png" style="border-radius: 80px; height: min(40vw, 400px); "></img>
         </div>
-
-        <div class="content-wrapper">
-            <div class="two-column-wrapper">
-                <div class="profile-image-wrapper">
-                    <picture>
-                        <source srcset="images/mobile_profile.jpeg" media="(max-width: 600px)">
-                        <img src="images/profile.jpeg" alt="profile-picture">
-                    </picture>
-                </div>
-                <div class="profile-content-wrapper">
-                    <h1>Hi, thanks for visiting my site.</h1>
-                    <p>I have a passion for understanding human
-                        hearing and the use of technology to aid those who
-                        experience <b>deafness or hearing loss</b>.<br><br>
-                        I have been awarded fellowships from the
-                        <b>Belgian American Educational Foundation (BAEF)</b>
-                        and <b>FWO</b> to study under Dr. Tom Francart and Dr. Astrid van Wieringen
-                        in the experimental Oto-Rhino-Laryngology (expORL) laboratory
-                        at KU Leuven in Belgium.<br><br>
-                        I obtained my Master's degree in
-                        Biomedical Engineering from the
-                        <b>University of Rochester</b> with a research
-                        focus in <b>auditory neuroscience</b>. During my masters I independently conducted a
-                        research study on the "effects of audio-visual
-                        congruence on the auditory brainstem response to
-                        speech".<br><br>
-                        I have past experience in research on the study of
-                        the inner ear and the cochlea through the use of
-                        <b>Optical Coherence Tomography (OCT)</b>. This
-                        research was conducted at Texas A&M University.
-                    </p>
-                    <p><b>Contact:</b> johnkyle.cooper@kuleuven.be</p>
-                </div>
-            </div>
+        <div>
+          <div
+            style="
+              font-family: Sora;
+              background-color: rgba(150, 111, 93, 0.5);
+              padding: 10px;
+              border-radius: 10px;
+              width: min(75vw,750px);
+            "
+          >
+            <p>
+              I have a passion for understanding human hearing and the use of
+              technology to aid those who experience deafness or hearing loss.
+            </p>
+            <p>
+              In 2021, I was awarded fellowships from the Belgian American
+              Educational Foundation (BAEF) and FWO to study under Dr. Tom
+              Francart and Dr. Astrid van Wieringen in the experimental
+              Oto-Rhino-Laryngology (expORL) laboratory at KU Leuven in Belgium.
+            </p>
+            <p>
+              Before that, I obtained my Master's degree in Biomedical Engineering from the
+              University of Rochester with a research focus in auditory
+              neuroscience. During my masters I independently conducted a research
+              study on the "effects of audio-visual congruence on the auditory
+              brainstem response to speech".
+            </p>
+            <p>
+              Also, I have past experience in research on the study of the inner ear and
+              the cochlea through the use of Optical Coherence Tomography (OCT).
+              This research was conducted at Texas A&M University.
+            </p>
+            <p>Contact: johnkyle.cooper@kuleuven.be</p>
+          </div>
         </div>
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>
