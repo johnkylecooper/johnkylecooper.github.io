@@ -22,6 +22,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Create CV and upload as an artifact
+  render-cv:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install rendercv
+        run: python -m pip install --upgrade pip rendercv
+      - name: Render CV
+        run: rendercv render JKC_CV.yaml
+      - name: Upload CV to repo
+        uses: actions/upload-artifact@v4
+        with:
+          name: render-cv-results
+          path: rendercv_output/John_Kyle_Cooper_CV.pdf
+
   # Single deploy job since we're just deploying
   deploy:
     environment:
