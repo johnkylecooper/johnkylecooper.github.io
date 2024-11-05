@@ -56,7 +56,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: render-cv-results
-          path: rendercv_output/John_Kyle_Cooper_CV.pdf
+          path: rendercv_output
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
