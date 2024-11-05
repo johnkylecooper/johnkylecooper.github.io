@@ -1,0 +1,19 @@
+name: Generate CV
+run-name: ${{ github.actor }} is generating a new CV!
+on: [push]
+jobs:
+  Run-Python-Script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+      - name: Install rendercv
+        run: python -m pip install --upgrade pip rendercv
+      - name: Render CV
+        run: rendercv render JKC_CV.yaml
+      - name: Upload CV to repo
+        uses: actions/upload-artifact@v4
+        with:
+          name: render-cv-results
+          path: ./
