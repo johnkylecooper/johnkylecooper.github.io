@@ -18,4 +18,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: render-cv-results
-          path: rendercv-output/JKC_CV.pdf
+          path: rendercv_output
