@@ -18,4 +18,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: render-cv-results
-          path: rendercv_output
+          path: rendercv_output/John_Kyle_Cooper_CV.pdf
