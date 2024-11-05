@@ -1,0 +1,142 @@
+cv:
+  name: John Kyle Cooper
+  location: Leuven, Belgium
+  email: johnkyle.cooper@kuleuven.be
+  website: https://johnkylecooper.github.io
+  social_networks:
+    - network: LinkedIn
+      username: john-kyle-cooper-ab9262148
+    - network: GitHub
+      username: johnkylecooper
+  sections:
+    Objective:
+      - Striving to gain research experience in the field of auditory neuroscience and apply that knowledge to the engineering of hearing aids and cochlear implants in a medical industry setting.
+    Education:
+      - institution: KU Leuven
+        area: Biomedical Sciences
+        degree: PhD
+        location: Leuven, Belgium
+        start_date: 2021-10
+        end_date: 2025-10
+      - institution: University of Rochester
+        area: Biomedical Engineering
+        degree: MSc
+        location: Rochester, New York
+        start_date: 2019-08
+        end_date: 2021-05
+      - institution: Texas A&M University
+        area: Biomedical Engineering
+        degree: BSc
+        location: College Station, Texas
+        end_date: 2019-05
+        highlights:
+          - Biomedical Engineering Fast-Track Program
+          - Germany Biosciences Program, Bonn, Germany
+          - Greece Engineering Ethics, Thessaloniki, Greece
+    Teaching Experience:
+      - company: KU Leuven
+        position: R Programming Teaching Assistant
+        location: Leuven, Belgium
+        date: 2024
+        highlights:
+          - Assist audiology students with basics of the R programming language and statistics.
+      - company: University of Rochester
+        position: Biomaterials Teaching Assistant
+        location: Rochester, New York
+        date: 2020
+        highlights:
+          - Assisted students with learning the basic concepts of biomaterials by leading lab sessions, review sessions, and weekly office hours. Underwent weekly discussion with the teaching professor to improve the teaching methods and learning environment for the students.
+    Research Experience:
+      - company: KU Leuven
+        position: FWO Strategic Basic Research PhD Fellow
+        location: Leuven, Belgium
+        start_date: 2021-11
+        end_date: "present"
+        highlights:
+          - PIs Dr. Tom Francart, Dr. Astrid van Wieringen
+          - Awarded FWO Strategic Basic (SB) Research PhD Fellowship to work with the experimental Oto-Rhino-Laryngology (expORL) lab to develop a realistic and objective measure of speech understanding for both normal hearing and hearing impaired listeners using electroencephalography (EEG).
+      - company: KU Leuven
+        position: BAEF Fellow
+        location: Leuven, Belgium
+        start_date: 2021-10
+        end_date: 2022-10
+        highlights:
+          - PI Dr. Tom Francart
+          - Awarded Belgian American Educational Foundation (B.A.E.F.) fellowship to work with the expORL lab to develop a realistic and objective measure of speech understanding for normal-hearing listeners using EEG.
+      - company: University of Rochester
+        position: Research Assistant
+        location: Rochester, New York
+        start_date: 2019-08
+        end_date: 2021-05
+        highlights:
+          - PI Dr. Ross Maddox
+          - Serve as a lab manager through subject recruitment & scheduling, ordering lab supplies, and assisting with the lab experiments.
+          - Conduct 70 EEG experiments for an NSF funded study aimed to investigate potential neural differences in the auditory brainstem between musicians and non-musicians.
+      - company: Texas A&M University
+        position: Research Assistant
+        location: College Station, Texas
+        start_date: 2016-08
+        end_date: 2019-05
+        highlights:
+          - PI Dr. Brian Applegate
+          - Conducted research focused on understanding cochlear pathophysiology and function using picometer sensitive, spatially resolved vibrometry in the ear.
+          - Wrote undergraduate thesis on the application of multi-tonal complex stimuli with Optical Coherence Tomography imaging for vibrometric analyses of inner-ear structures.
+          - Undergraduate Summer Research Grant Recipient (2018).
+      - company: Lynntech Inc.
+        position: Design Teammate
+        location: College Station, Texas
+        start_date: 2018-09
+        end_date: 2019-05
+        highlights:
+          - Worked with a group of biomedical engineers on an orthotic rehabilitation device.
+          - Tasked with documentation, 3-D modeling, construction, and programming of the device.
+      - company: Enmodes GmbH
+        position: Design Teammate
+        location: Aachen, Germany
+        start_date: 2017-01
+        end_date: 2017-05
+        highlights:
+          - Assisted in the R&D of the Ras-Q (world’s first long-term respiratory system).
+          - Modeled a prototype for presentation to the company.
+    Technical Skills:
+        - label: Programming
+          details: Python, MATLAB, R, HTML, CSS
+        - label: 5 years of EEG experience
+          details: Brain Vision & Biosemi software
+        - label: Virtual Reality Development
+          details: Pupil Labs, HTC Vive, & Unreal Engine
+        - label: 3-D design & printing
+          details: SolidWorks & Blender
+    Presentations:
+        - company: IERASG
+          position: Talk
+          location: Cologne, Germany
+          date: 2023-09
+          highlights:
+            - Effects of Mouth Movements on Speech Intelligibility in Naturalistic Audiovisual Environment.
+        - company: ISAAR
+          position: Poster
+          location: Nyborg, Denmark
+          date: 2023-08
+          highlights:
+            - Optimizing Recording Times For Auditory Trfs - Back-To-Back Modeling Approach.
+        - company: Society for Neuroscience
+          position: Poster
+          location: San Diego, California
+          date: 2022-11
+          highlights:
+            - Effects of language understanding on hemispheric lateralization in brain activity.
+        - company: BMES Conference
+          position: Poster
+          location: Atlanta, Georgia
+          date: 2018-10
+          highlights:
+            - Calibration of Multi-Tonal Complex for Optical Coherence Tomography Imaging System.
+
+    Honors:
+        - bullet: Fulbright Semifinalist for Open Study/Research Award to Belgium (2021)
+        - bullet: BME Graduate Student Teaching Assistant Award Honorable Mention (2020)
+        - bullet: Undergraduate Research Scholar (2019)
+        - bullet: Eagle Scout (2014)
+design:
+    theme: engineeringresumes
