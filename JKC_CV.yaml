@@ -35,15 +35,17 @@ cv:
           - Greece Engineering Ethics, Thessaloniki, Greece
     Technical Skills:
         - label: Programming
-          details: Python (scikit-learn, pandas, mne-python, PyTorch), MATLAB, GitLab, R, HTML, CSS
-        - label: 5 years of EEG experience
-          details: Brain Vision & Biosemi software
+          details: Python, MATLAB, GitLab, R, SQL, HTML, CSS
+        - label: Frameworks
+          details: scikit-learn, pandas, PyTorch, GitLab, dbt, DVC
+        - label: Medical Imaging
+          details: Advanced EEG (mne-python, Brain Vision, Biosemi software) and MRI analysis
         - label: Virtual Reality Development
           details: Pupil Labs, HTC Vive, & Unreal Engine
         - label: 3-D design & printing
           details: SolidWorks & Blender
         - label: Languages
-          details: 'Japanese (N4 level), Dutch (A2 level)'
+          details: Dutch (A2 level), Japanese (N4 level)
     Research Experience:
       - company: KU Leuven
         position: FWO Strategic Basic Research PhD Fellow
@@ -54,14 +56,6 @@ cv:
           - PIs Dr. Tom Francart, Dr. Astrid van Wieringen
           - Engineered experiment and data pipelines for processing neuroimaging data used in time-series forecasting models to predict speech understanding.
           - Enhanced shared data pipeline codebase with new features, optimizations, and documentation during monthly hackathons. 
-      - company: KU Leuven
-        position: BAEF Fellow
-        location: Leuven, Belgium
-        start_date: 2021-10
-        end_date: 2022-10
-        highlights:
-          - PI Dr. Tom Francart
-          - Awarded Belgian American Educational Foundation (B.A.E.F.) fellowship to work with the ExpORL lab to develop a realistic and objective measure of speech understanding for normal-hearing listeners using EEG.
       - company: University of Rochester
         position: Research Assistant
         location: Rochester, New York
@@ -190,12 +184,27 @@ cv:
             - Calibration of Multi-Tonal Complex for Optical Coherence Tomography Imaging System.
     Honors:
         - bullet: Best "New Neuromorph" Award - Telluride Neuromorphic Cognition Engineering Workshop (2022)
+        - bullet: Belgian American Educational Foundation (B.A.E.F.) Fellow (2021)
         - bullet: Fulbright Semifinalist for Open Study/Research Award to Belgium (2021)
         - bullet: BME Graduate Student Teaching Assistant Award Honorable Mention (2020)
         - bullet: Undergraduate Research Scholar (2019)
         - bullet: Eagle Scout (2014)
 design:
-    theme: engineeringresumes
+    theme: classic    
     page:
       size: a4
       show_last_updated_date: false
+    text:
+      font_size: 10pt
+    header:
+      name_font_size: 30pt
+    entry_types:
+      education_entry:
+        main_column_first_row_template: '**INSTITUTION**, AREA - LOCATION'
+        degree_column_template: '**DEGREE**'
+        degree_column_width: 1cm
+        date_and_location_column_template: DATE
+      experience_entry:
+        main_column_first_row_template: '**COMPANY**, POSITION - LOCATION'
+        date_and_location_column_template: DATE
+
