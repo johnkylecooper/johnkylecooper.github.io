@@ -35,13 +35,13 @@ cv:
           - Greece Engineering Ethics, Thessaloniki, Greece
     Technical Skills:
         - label: Programming
-          details: Python, MATLAB, GitLab, R, SQL, HTML, CSS
+          details: Python, MATLAB, R, SQL, JavaScript, HTML, CSS
         - label: Frameworks
-          details: scikit-learn, pandas, PyTorch, GitLab, dbt, DVC
-        - label: Medical Imaging
-          details: Advanced EEG (mne-python, Brain Vision, Biosemi software) and MRI analysis
-        - label: Virtual Reality Development
-          details: Pupil Labs, HTC Vive, & Unreal Engine
+          details: scikit-learn, pandas, PyTorch, GitLab, DVC, dbt
+        - label: Neuroimaging
+          details: Advanced EEG (mne-python, Brain Vision, Biosemi software) and MRI data analysis
+        - label: Virtual Reality (VR) Development
+          details: Unity (C#), Pupil Labs, HTC Vive, Meta Quest, and Unreal Engine
         - label: 3-D design & printing
           details: SolidWorks & Blender
         - label: Languages
@@ -54,8 +54,9 @@ cv:
         end_date: "present"
         highlights:
           - PIs Dr. Tom Francart, Dr. Astrid van Wieringen
-          - Engineered experiment and data pipelines for processing neuroimaging data used in time-series forecasting models to predict speech understanding.
-          - Enhanced shared data pipeline codebase with new features, optimizations, and documentation during monthly hackathons. 
+          - Engineered experiment and data pipelines in GitLab for processing neuroimaging data used in time-series forecasting models from scikit-learn to predict speech understanding.
+          - Enhanced shared data pipeline codebase in Gitlab with new features, optimizations, and documentation during monthly hackathons.
+          - Redesigned VR environment using Unity and Javascript to investigate audiovisual effects using neuroimaging.  
       - company: University of Rochester
         position: Research Assistant
         location: Rochester, New York
@@ -63,9 +64,8 @@ cv:
         end_date: 2021-05
         highlights:
           - PI Dr. Ross Maddox
-          - Designed and implemented an experimental setup to achieve sub-millisecond latency in video playback for audiovisual experiments.
-          - Managed lab work through subject recruitment & scheduling, ordering lab supplies, and assisting with the lab experiments.
-          - Conducted 70 EEG experiments for an NSF funded study aimed to investigate potential neural differences in the auditory brainstem between musicians and non-musicians.
+          - Designed and implemented an experimental neuroimaging setup using Python to achieve sub-millisecond latency in video playback for audiovisual experiments.
+          - Managed participant recruitment & scheduling, ordering supplies, and assisting with lab experiments.
       - company: Texas A&M University
         position: Research Assistant
         location: College Station, Texas
@@ -73,9 +73,8 @@ cv:
         end_date: 2019-05
         highlights:
           - PI Dr. Brian Applegate
-          - Conducted research focused on cochlear pathophysiology and function using vibrometry in the ear.
-          - Wrote undergraduate thesis on the application of multi-tonal complex stimuli with Optical Coherence Tomography imaging for vibrometric analyses of inner-ear structures.
-          - Undergraduate Summer Research Grant Recipient (2018).
+          - Developed virtual reality experience in Unreal Engine to view 3D volumetric scans of mouse cochlea.
+          - Designed and fabricated power supply boxes used in experimental Optical Coherence Tomography (OCT) scanning setup.
       - company: Lynntech Inc.
         position: Design Teammate
         location: College Station, Texas
@@ -83,7 +82,6 @@ cv:
         end_date: 2019-05
         highlights:
           - Designed and developed an orthotic rehabilitation device with a team of biomedical engineers.
-          - Tasked with documentation, 3-D modeling, construction, and programming of the device.
       - company: Enmodes GmbH
         position: Design Teammate
         location: Aachen, Germany
@@ -188,6 +186,7 @@ cv:
         - bullet: Fulbright Semifinalist for Open Study/Research Award to Belgium (2021)
         - bullet: BME Graduate Student Teaching Assistant Award Honorable Mention (2020)
         - bullet: Undergraduate Research Scholar (2019)
+        - bullet: Undergraduate Summer Research Grant Recipient (2018)
         - bullet: Eagle Scout (2014)
 design:
     theme: classic    
