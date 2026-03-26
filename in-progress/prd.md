@@ -1,0 +1,2 @@
+# PRD
+I want to make a personal website to tell others about my work. I would like to add a creative flair to the website by allowing the user to click various buttons with text "About me" and "My Research" for example and when the text is clicked the text related to the main text (e.g. About me) will appear like an LLM is providing the answer.
