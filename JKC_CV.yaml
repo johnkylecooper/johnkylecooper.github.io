@@ -1,7 +1,7 @@
 cv:
   name: John Kyle Cooper
-  location: Leuven, Belgium
-  email: johnkyle.cooper@kuleuven.be
+  location: Tokyo, Japan
+  email: johnkylecooper@gmail.com
   website: https://johnkylecooper.github.io
   social_networks:
     - network: LinkedIn
@@ -9,8 +9,8 @@ cv:
     - network: GitHub
       username: johnkylecooper
   sections:
-    Objective:
-      - Striving to leverage machine learning to develop innovative, data-driven solutions across diverse fields. I aim to continuously improve my engineering skills and contribute to transformative projects that improve our understanding of complex systems, particularly in auditory neuroscience and beyond.
+    Professional Summary:
+      - Analytical Biomedical Engineer with a focus on human-computer interaction and neuroimaging. Proven track record of developing immersive VR research environments in Unity/Unreal Engine and optimizing data pipelines for complex biological systems. Seeking to integrate advanced XR technology with rigorous cognitive neuroscience research to solve real-world clinical challenges.
     Education:
       - institution: KU Leuven
         area: Biomedical Sciences
@@ -30,14 +30,14 @@ cv:
         location: College Station, Texas
         end_date: 2019-05
         highlights:
-          - Biomedical Engineering Fast-Track Program
+          # - Biomedical Engineering Fast-Track Program
           - Germany Biosciences Program, Bonn, Germany
           - Greece Engineering Ethics, Thessaloniki, Greece
     Technical Skills:
         - label: Programming
           details: Python, MATLAB, R, SQL, JavaScript, HTML, CSS
         - label: Frameworks
-          details: scikit-learn, pandas, PyTorch, GitLab, DVC, dbt
+          details: scikit-learn, pandas, PyTorch, GitLab
         - label: Neuroimaging
           details: Advanced EEG (mne-python, Brain Vision, Biosemi software) and MRI data analysis
         - label: Virtual Reality (VR) Development
@@ -47,11 +47,18 @@ cv:
         - label: Languages
           details: Dutch (A2 level), Japanese (N4 level)
     Research Experience:
+      - company: IRCN, The University of Tokyo
+        position: Project Researcher
+        location: Tokyo, Japan
+        start_date: 2025-11
+        end_date: "present"
+        highlights:
+          - Investigating the neural mechanisms of insightful problem solving.
       - company: KU Leuven
         position: FWO Strategic Basic Research PhD Fellow
         location: Leuven, Belgium
         start_date: 2021-11
-        end_date: "present"
+        end_date: 2025-10
         highlights:
           - PIs Dr. Tom Francart, Dr. Astrid van Wieringen
           - Engineered experiment and data pipelines in GitLab for processing neuroimaging data used in time-series forecasting models from scikit-learn to predict speech understanding.
@@ -89,51 +96,30 @@ cv:
         end_date: 2017-05
         highlights:
           - Modeled a prototype of the Ras-Q (world’s first long-term respiratory system) and presented to the company.
-    Teaching Experience:
-      - company: KU Leuven
-        position: R Programming Teaching Assistant
-        location: Leuven, Belgium
-        date: 2024
-        highlights:
-          - Taught audiology students the basics of the R programming language and statistics.
-      - company: University of Rochester
-        position: Biomaterials Teaching Assistant
-        location: Rochester, New York
-        date: 2020
-        highlights:
-          - Taught students the basic concepts of biomaterials by leading lab sessions, review sessions, and weekly office hours. Collaborated with the professor to improve the teaching methods and learning environment.
+    # Teaching Experience:
+    #   - company: KU Leuven
+    #     position: R Programming Teaching Assistant
+    #     location: Leuven, Belgium
+    #     date: 2024
+    #     highlights:
+    #       - Taught audiology students the basics of the R programming language and statistics.
+    #   - company: University of Rochester
+    #     position: Biomaterials Teaching Assistant
+    #     location: Rochester, New York
+    #     date: 2020
+    #     highlights:
+    #       - Taught students the basic concepts of biomaterials by leading lab sessions, review sessions, and weekly office hours. Collaborated with the professor to improve the teaching methods and learning environment.
     Publications:
         - title: 'Musical training does not enhance neural sound encoding at early stages of the auditory system: A large-scale multisite investigation'
           authors: 
             - K. L. Whiteford
-            - L. S. Baltzell
-            - M. Chiu
+            - ...
             - J. K. Cooper
-            - S. Faucher
-            - P. Y. Goh
-            - A. Hagedorn
-            - V. C. Irsik
-            - A. Irvine
-            - S. Lim
-            - J. Mesik
-            - B. Mesquita
-            - B. Oakes
-            - N. Rajappa
-            - E. Roverud
-            - A. E. Schrlau
-            - S. C. Van Hedger
-            - H. M. Bharadwaj
-            - I. S. Johnsrude
-            - G. K. Jr
-            - A. E. Luebke
-            - R. K. Maddox
-            - E. W. Marvin
-            - T. K. Perrachione
-            - B. G. Shinn-Cunningham
+            - ...
             - A. J. Oxenham
           doi: https://doi.org/10.1101/2024.09.02.610856
           url: 
-          journal: (Under Review) Nature Communications
+          journal: Nature Communications
           date: 2024-09
         - title: Objectively measuring audiovisual effects in noise using virtual human speakers
           authors:
@@ -145,16 +131,16 @@ cv:
           url: 
           journal: Trends in Hearing
           date: 2025-04
-        - title: Comparing audiovisual benefit from deep neural network-generated virtual humans versus real human  
+        - title: Neural Tracking of Audiovisual Effects in Noise Using Deep Neural Network-Generated Virtual Humans
           authors:
           - J. K. Cooper
           - J. Vanthornhout
           - A. van Wieringen
           - T. Francart 
-          doi: 
+          doi: https://doi.org/10.1101/2025.06.02.656280
           url: 
-          journal: (In Preparation) Ear and Hearing
-          date: 2025-04
+          journal: bioRxiv
+          date: 2025-06
     Presentations:
         - company: IERASG
           position: Talk
@@ -189,14 +175,14 @@ cv:
         - bullet: Undergraduate Summer Research Grant Recipient (2018)
         - bullet: Eagle Scout (2014)
 design:
-    theme: classic    
+    theme: engineeringclassic    
     page:
       size: a4
       show_last_updated_date: false
-    text:
-      font_size: 10pt
-    header:
-      name_font_size: 30pt
+    # text:
+      # font_size: 10pt
+    # header:
+      # name_font_size: 30pt
     entry_types:
       education_entry:
         main_column_first_row_template: '**INSTITUTION**, AREA - LOCATION'
