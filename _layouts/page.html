@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="content-panel">
+  <div class="content-panel__eyebrow">{{ page.eyebrow | default: "Profile" }}</div>
+  <h1 class="content-panel__title">{{ page.title }}</h1>
+  {% if page.lead %}
+    <p class="content-panel__lead">{{ page.lead }}</p>
+  {% endif %}
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

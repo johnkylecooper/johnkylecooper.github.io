@@ -1,0 +1,110 @@
+name: John Kyle Cooper
+location: Tokyo, Japan
+email: johnkylecooper@gmail.com
+website: https://johnkylecooper.github.io
+social_networks:
+  - network: LinkedIn
+    label: john-kyle-cooper
+    url: https://www.linkedin.com/in/john-kyle-cooper-ab9262148
+  - network: GitHub
+    label: johnkylecooper
+    url: https://github.com/johnkylecooper
+summary: Analytical Biomedical Engineer with a focus on human-computer interaction and neuroimaging. Proven track record of developing immersive VR research environments in Unity and Unreal Engine, and optimizing data pipelines for complex biological systems.
+education:
+  - institution: KU Leuven
+    area: Biomedical Sciences
+    degree: PhD
+    location: Leuven, Belgium
+    dates: 2021-10 to 2025-10
+  - institution: University of Rochester
+    area: Biomedical Engineering
+    degree: MSc
+    location: Rochester, New York
+    dates: 2019-08 to 2021-05
+  - institution: Texas A&M University
+    area: Biomedical Engineering
+    degree: BSc
+    location: College Station, Texas
+    dates: through 2019-05
+skills:
+  - label: Programming
+    details: Python, MATLAB, R, SQL, JavaScript, HTML, CSS
+  - label: Frameworks
+    details: scikit-learn, pandas, PyTorch, GitLab
+  - label: Neuroimaging
+    details: Advanced EEG with mne-python, Brain Vision, Biosemi software, and MRI data analysis
+  - label: Virtual Reality
+    details: Unity (C#), Pupil Labs, HTC Vive, Meta Quest, and Unreal Engine
+  - label: 3-D design and printing
+    details: SolidWorks and Blender
+  - label: Languages
+    details: Dutch (A2), Japanese (N4)
+experience:
+  - company: IRCN, The University of Tokyo
+    position: Project Researcher
+    location: Tokyo, Japan
+    dates: 2025-11 to present
+    highlights:
+      - Investigating the neural mechanisms of insightful problem solving.
+  - company: KU Leuven
+    position: FWO Strategic Basic Research PhD Fellow
+    location: Leuven, Belgium
+    dates: 2021-11 to 2025-10
+    highlights:
+      - Engineered experiment and data pipelines in GitLab for processing neuroimaging data and time-series forecasting for speech understanding.
+      - Enhanced a shared data pipeline codebase with new features, optimizations, and documentation during monthly hackathons.
+      - Redesigned a VR environment using Unity and JavaScript to investigate audiovisual effects with neuroimaging.
+  - company: University of Rochester
+    position: Research Assistant
+    location: Rochester, New York
+    dates: 2019-08 to 2021-05
+    highlights:
+      - Designed and implemented an experimental neuroimaging setup using Python to achieve sub-millisecond latency in video playback for audiovisual experiments.
+      - Managed participant recruitment, scheduling, supplies, and lab support.
+  - company: Texas A&M University
+    position: Research Assistant
+    location: College Station, Texas
+    dates: 2016-08 to 2019-05
+    highlights:
+      - Developed a virtual reality experience in Unreal Engine to view 3D volumetric scans of mouse cochlea.
+      - Designed and fabricated power supply boxes for experimental Optical Coherence Tomography scanning.
+teaching:
+  - company: IRCN, The University of Tokyo
+    position: Student Outreach Instructor
+    location: Tokyo, Japan
+    dates: 2026
+    highlights:
+      - Led an outreach session for visiting Thai students on creativity, introducing the idea that strong creative work is both novel and useful.
+      - Demonstrated an application that used large language models to evaluate creative ideas.
+      - Introduced students to EEG and explained how brain activity can be measured in research settings.
+  - company: KU Leuven
+    position: R Programming Teaching Assistant
+    location: Leuven, Belgium
+    dates: 2024
+    highlights:
+      - Taught audiology students the basics of the R programming language and statistics.
+  - company: University of Rochester
+    position: Biomaterials Teaching Assistant
+    location: Rochester, New York
+    dates: 2020
+    highlights:
+      - Taught students the basic concepts of biomaterials by leading lab sessions, review sessions, and weekly office hours.
+      - Collaborated with the professor to improve the teaching methods and learning environment.
+publications:
+  - title: Musical training does not enhance neural sound encoding at early stages of the auditory system
+    journal: Nature Communications
+    date: 2024-09
+    doi: https://doi.org/10.1101/2024.09.02.610856
+  - title: Objectively measuring audiovisual effects in noise using virtual human speakers
+    journal: Trends in Hearing
+    date: 2025-04
+    doi: https://doi.org/10.1177/23312165251333528
+  - title: Neural Tracking of Audiovisual Effects in Noise Using Deep Neural Network-Generated Virtual Humans
+    journal: bioRxiv
+    date: 2025-06
+    doi: https://doi.org/10.1101/2025.06.02.656280
+honors:
+  - Best "New Neuromorph" Award, Telluride Neuromorphic Cognition Engineering Workshop (2022)
+  - Belgian American Educational Foundation Fellow (2021)
+  - Fulbright Semifinalist for Open Study/Research Award to Belgium (2021)
+  - BME Graduate Student Teaching Assistant Award Honorable Mention (2020)

@@ -1,0 +1,8 @@
+<header class="site-shell__header">
+  <a class="site-mark" href="#home" data-panel-link="home">JKC</a>
+  <nav class="site-nav" aria-label="Primary">
+    {% for item in site.data.navigation %}
+      <button class="site-nav__link" type="button" data-panel-link="{{ item.panel }}">{{ item.title }}</button>
+    {% endfor %}
+  </nav>
+</header>

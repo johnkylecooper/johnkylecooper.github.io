@@ -1,0 +1,29 @@
+title: John Kyle Cooper
+email: johnkylecooper@gmail.com
+description: Personal website and living resume for John Kyle Cooper.
+url: "https://johnkylecooper.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: "assets"
+    values:
+      layout: null
+
+exclude:
+  - myenv/
+  - .venv/
+  - .vscode/
+  - README.md
+  - in-progress/
+  - JKC_CV.yaml

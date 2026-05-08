@@ -1,0 +1,9 @@
+- label: About
+  key: about
+  text: Hi, I'm Kyle. I build research experiences that combine neuroscience, immersive technology, and careful engineering.
+- label: Research
+  key: research
+  text: My work centers on hearing, cognition, and the design of experimental systems that make complex human behavior measurable.
+- label: Contact
+  key: contact
+  text: Reach me at johnkylecooper@gmail.com, on LinkedIn, or through GitHub if you'd like to collaborate.

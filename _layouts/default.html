@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="{{ page.body_class }}">
+    <div class="site-backdrop"></div>
+    <div class="site-shell">
+      {% include site_header.html %}
+      <main class="site-shell__main">
+        {{ content }}
+      </main>
+    </div>
+    <script src="{{ '/assets/js/home.js' | relative_url }}" defer></script>
+  </body>
+</html>

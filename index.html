@@ -1,187 +1,262 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>johnkylecooper</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Pacifico"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Sora:800"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/77927b8d22.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      .image-container {
-        position: absolute;
-        background-image: url(lukas-blazek-GnvurwJsKaY-unsplash.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        opacity: 50%;
-        width: 100%;
-        height: 100vh;
-        z-index: 0;
-      }
-      .grid-container {
-        position: absolute;
-        display: grid;
-        grid-template-rows: auto auto;
-        margin: 2vw;
-        height: 5vh;
-        z-index: 1;
-      }
-      .three-column-grid {
-        position: absolute;
-        display: grid;
-        grid-template-columns: 10vw auto;
-        height: 100vh;
-        width: 100vw;
-        align-items: center;
-        z-index: 0;
-      }
-      .three-row-grid {
-        display: grid;
-        grid-template-columns: auto 10%;
-        grid-template-rows: auto auto auto;
-        justify-content: right;
-        row-gap: 5vh;
-      }
-      .four-by-four-grid {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
-        justify-content: center;
-        gap: 7vh;
-      }
-      .grid-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .left {
-        padding: 10px;
-        font-size: max(2.5vw, 20px);
-      }
-      .right {
-        font-size: min(15vw, 300px);
-      }
-      .icon {
-        transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out,
-          color 0.25s ease-in-out;
-      }
-      #text {
-        font-family: Sora;
-        white-space: nowrap;
-        justify-content: left;
-        color: #966f5d;
-        opacity: 0%;
-        transform: scale(0.75);
-        transition: transform 0.5s ease-in-out, opacity 0.25s ease-in-out;
-      }
-      #inner-text {
-        font-family: Sora;
-        position: absolute;
-        top: -5vw;
-        transform: scale(0);
-        font-size: 3vw;
-        color: #966f5d;
-        opacity: 0%;
-        transition: transform 0.5s ease-in-out, opacity 0.25s ease-in-out;
-      }
-      .active,
-      .icon:hover {
-        opacity: 75%;
-        color: #966f5d;
-        transform: scale(0.95);
-      }
-      .icon:hover + #text {
-        opacity: 75%;
-        transform: scale(1);
-      }
-      .icon:hover > #inner-text {
-        opacity: 100%;
-        transform: scale(1);
-      }
-      .initials {
-        white-space: nowrap;
-        font-family: Sora;
-        font-size: 3vw;
-        color: #966f5d;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="image-container"></div>
-    <div class="grid-container">
-      <div class="initials">JKC</div>
-    </div>
-    <div class="three-column-grid">
-      <div class="three-row-grid">
-        <a
-          class="icon"
-          href="index.html"
-          style="color: black; text-decoration: none"
-          ><div class="grid-item left icon active">
-            <i class="fa-solid fa-house"></i>
-          </div>
-        </a>
-        <div class="grid-item left" id="text">home</div>
-        <a
-          class="icon"
-          href="blog.html"
-          style="color: black; text-decoration: none"
-          ><div class="grid-item left icon">
-            <i class="fa-solid fa-feather"></i></div
-        ></a>
-        <div class="grid-item left" id="text">blog</div>
-        <a
-          class="icon"
-          href="about.html"
-          style="color: black; text-decoration: none"
-          ><div class="grid-item left icon">
-            <i class="fa-solid fa-user"></i>
-          </div>
-        </a>
-        <div class="grid-item left" id="text">about me</div>
+---
+layout: default
+title: Home
+body_class: home
+description: Personal website and living resume for John Kyle Cooper.
+---
+<div class="tab-shell" data-tabs-root>
+  <section class="tab-panel is-active" id="home" data-panel="home" aria-labelledby="panel-home-title">
+    <div class="home-grid">
+      <div class="hero-panel">
+        <p class="hero-panel__eyebrow">Living Resume</p>
+        <h1 class="hero-panel__title" id="panel-home-title">John Kyle Cooper</h1>
+        <p class="hero-panel__lead">Biomedical engineer, researcher, and builder of experimental systems for neuroscience, immersive interaction, and communication science.</p>
+
+        <div class="prompt-selector" aria-label="Interactive prompts">
+          {% for prompt in site.data.home_prompts %}
+            <button class="prompt-selector__button" type="button" data-prompt-text="{{ prompt.text }}">{{ prompt.label }}</button>
+          {% endfor %}
+        </div>
+
+        <div class="hero-response" data-response-area>
+          <span class="hero-response__placeholder">Pick a path above and the homepage will answer back.</span>
+        </div>
       </div>
-      <div class="four-by-four-grid">
-        <a href="rendercv_output/John_Kyle_Cooper_CV.pdf" style="color: black; text-decoration: none">
-          <div class="grid-item right icon">
-            <i class="fa-regular fa-file-lines"></i>
-            <div class="grid-item" id="inner-text">CV</div>
-          </div>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/john-kyle-cooper-ab9262148"
-          style="color: black; text-decoration: none"
-        >
-          <div class="grid-item right icon">
-            <i class="fa-brands fa-linkedin"></i>
-            <div class="grid-item" id="inner-text">LinkedIn</div>
-          </div>
-        </a>
-        <a
-          href="https://github.com/johnkylecooper"
-          style="color: black; text-decoration: none; grid-column: 1/3"
-        >
-          <div class="grid-item right icon">
-            <i class="fa-brands fa-github"></i>
-            <div class="grid-item" id="inner-text">GitHub</div>
-          </div>
-        </a>
-      </div>
+
+      <aside class="preview-panel">
+        <p class="preview-panel__eyebrow">Quick Paths</p>
+
+        <section class="preview-card">
+          <h2 class="preview-card__title">About</h2>
+          <p class="preview-card__text">Background, training, and the thread connecting hearing research, cognition, and technology.</p>
+          <button class="preview-card__link" type="button" data-panel-link="about">Open tab</button>
+        </section>
+
+        <section class="preview-card">
+          <h2 class="preview-card__title">Research</h2>
+          <p class="preview-card__text">Projects, publications, and the kinds of scientific questions driving the work.</p>
+          <button class="preview-card__link" type="button" data-panel-link="research">Open tab</button>
+        </section>
+
+        <section class="preview-card">
+          <h2 class="preview-card__title">CV</h2>
+          <p class="preview-card__text">Resume content now lives directly in the page, so visitors can browse it without leaving the experience.</p>
+          <button class="preview-card__link" type="button" data-panel-link="cv">Open tab</button>
+        </section>
+      </aside>
     </div>
-  </body>
-</html>
+  </section>
+
+  <section class="tab-panel" id="about" data-panel="about" aria-labelledby="panel-about-title" hidden>
+    <article class="content-panel">
+      <div class="content-panel__eyebrow">Biography</div>
+      <h1 class="content-panel__title" id="panel-about-title">About</h1>
+      <p class="content-panel__lead">A research path shaped by hearing science, human perception, and the tools that make careful experiments possible.</p>
+      <div class="prose">
+        <p>I have a passion for understanding human hearing and for using technology to support people who experience deafness or hearing loss.</p>
+        <p>In 2021, I was awarded fellowships from the Belgian American Educational Foundation and FWO to study under Dr. Tom Francart and Dr. Astrid van Wieringen in the experimental Oto-Rhino-Laryngology laboratory at KU Leuven in Belgium.</p>
+        <p>Before that, I obtained my Master's degree in Biomedical Engineering from the University of Rochester with a research focus in auditory neuroscience. During my master's work, I independently conducted a study on the effects of audiovisual congruence on the auditory brainstem response to speech.</p>
+        <p>I also have earlier research experience studying the inner ear and the cochlea through Optical Coherence Tomography at Texas A&amp;M University.</p>
+        <p>Today, my work continues to connect neuroscience, engineering, and interaction design in ways that make difficult human questions easier to study.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="tab-panel" id="research" data-panel="research" aria-labelledby="panel-research-title" hidden>
+    <article class="content-panel">
+      <div class="content-panel__eyebrow">Research Themes</div>
+      <h1 class="content-panel__title" id="panel-research-title">Research</h1>
+      <p class="content-panel__lead">The core themes behind my work, presented from broad motivation to more specific questions and methods.</p>
+      <div class="prose">
+        <p>My research currently clusters around three themes: hearing loss, human-computer interaction, and creativity and problem solving. Each one reflects both a scientific question and a practical reason it matters.</p>
+      </div>
+
+      <section class="knowledge-panel" aria-labelledby="hearing-loss-title">
+        <div class="accordion-list" aria-label="Research topic groups">
+          <section class="accordion-group is-open" data-accordion-group="hearing-loss">
+            <div class="accordion-group__header">
+              <h3 class="knowledge-group__title">Hearing Loss</h3>
+              <button class="accordion-group__toggle" type="button" data-accordion-toggle="hearing-loss" aria-expanded="true">Open</button>
+            </div>
+            <div class="accordion-group__body">
+              {% assign hearing_topic = site.data.hearing_topics | where: "slug", "why-hearing-loss-matters" | first %}
+              <ul class="knowledge-bullets">
+                {% for topic in site.data.hearing_topics %}
+                  {% if topic.category == "hearing-loss" %}
+                    <li>
+                      <button class="knowledge-card{% if topic.slug == hearing_topic.slug %} is-active{% endif %}" type="button" data-topic-trigger="{{ topic.slug }}">
+                        <span class="knowledge-card__title">{{ topic.title }}</span>
+                        <span class="knowledge-card__blurb">{{ topic.blurb }}</span>
+                      </button>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+              <div class="knowledge-detail" data-topic-detail-group="hearing-loss">
+                <p class="knowledge-detail__kicker">{{ hearing_topic.kicker }}</p>
+                <h3 class="knowledge-detail__title">{{ hearing_topic.title }}</h3>
+                {% for paragraph in hearing_topic.body %}
+                  <p>{{ paragraph }}</p>
+                {% endfor %}
+              </div>
+            </div>
+          </section>
+
+          <section class="accordion-group" data-accordion-group="human-computer-interaction">
+            <div class="accordion-group__header">
+              <h3 class="knowledge-group__title">Human-Computer Interaction</h3>
+              <button class="accordion-group__toggle" type="button" data-accordion-toggle="human-computer-interaction" aria-expanded="false">Open</button>
+            </div>
+            <div class="accordion-group__body" hidden>
+              {% assign hci_topic = site.data.hearing_topics | where: "slug", "hci-experimental-systems" | first %}
+              <ul class="knowledge-bullets">
+                {% for topic in site.data.hearing_topics %}
+                  {% if topic.category == "human-computer-interaction" %}
+                    <li>
+                      <button class="knowledge-card" type="button" data-topic-trigger="{{ topic.slug }}">
+                        <span class="knowledge-card__title">{{ topic.title }}</span>
+                        <span class="knowledge-card__blurb">{{ topic.blurb }}</span>
+                      </button>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+              <div class="knowledge-detail" data-topic-detail-group="human-computer-interaction">
+                <p class="knowledge-detail__kicker">{{ hci_topic.kicker }}</p>
+                <h3 class="knowledge-detail__title">{{ hci_topic.title }}</h3>
+                {% for paragraph in hci_topic.body %}
+                  <p>{{ paragraph }}</p>
+                {% endfor %}
+              </div>
+            </div>
+          </section>
+
+          <section class="accordion-group" data-accordion-group="creativity">
+            <div class="accordion-group__header">
+              <h3 class="knowledge-group__title">Creativity and Problem Solving</h3>
+              <button class="accordion-group__toggle" type="button" data-accordion-toggle="creativity" aria-expanded="false">Open</button>
+            </div>
+            <div class="accordion-group__body" hidden>
+              {% assign creativity_topic = site.data.hearing_topics | where: "slug", "creativity-and-ai" | first %}
+              <ul class="knowledge-bullets">
+                {% for topic in site.data.hearing_topics %}
+                  {% if topic.category == "creativity" %}
+                    <li>
+                      <button class="knowledge-card" type="button" data-topic-trigger="{{ topic.slug }}">
+                        <span class="knowledge-card__title">{{ topic.title }}</span>
+                        <span class="knowledge-card__blurb">{{ topic.blurb }}</span>
+                      </button>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+              <div class="knowledge-detail" data-topic-detail-group="creativity">
+                <p class="knowledge-detail__kicker">{{ creativity_topic.kicker }}</p>
+                <h3 class="knowledge-detail__title">{{ creativity_topic.title }}</h3>
+                {% for paragraph in creativity_topic.body %}
+                  <p>{{ paragraph }}</p>
+                {% endfor %}
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </article>
+  </section>
+
+  <section class="tab-panel" id="cv" data-panel="cv" aria-labelledby="panel-cv-title" hidden>
+    <article class="content-panel cv-panel">
+      <div class="content-panel__eyebrow">Living Resume</div>
+      <h1 class="content-panel__title" id="panel-cv-title">{{ site.data.cv_site.name }}</h1>
+      <p class="content-panel__lead">{{ site.data.cv_site.summary }}</p>
+
+      <div class="cv-meta">
+        <span>{{ site.data.cv_site.location }}</span>
+        <a href="mailto:{{ site.data.cv_site.email }}">{{ site.data.cv_site.email }}</a>
+        {% for profile in site.data.cv_site.social_networks %}
+          <a href="{{ profile.url }}">{{ profile.network }}</a>
+        {% endfor %}
+      </div>
+
+      <div class="cv-grid">
+        <section class="cv-section">
+          <h2 class="cv-section__title">Education</h2>
+          {% for item in site.data.cv_site.education %}
+            <article class="cv-entry">
+              <h3 class="cv-entry__title">{{ item.degree }}, {{ item.area }}</h3>
+              <p class="cv-entry__meta">{{ item.institution }} | {{ item.location }} | {{ item.dates }}</p>
+            </article>
+          {% endfor %}
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title">Skills</h2>
+          <div class="skill-list">
+            {% for skill in site.data.cv_site.skills %}
+              <article class="skill-chip">
+                <h3 class="skill-chip__title">{{ skill.label }}</h3>
+                <p>{{ skill.details }}</p>
+              </article>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="cv-section cv-section--wide">
+          <h2 class="cv-section__title">Experience</h2>
+          {% for role in site.data.cv_site.experience %}
+            <article class="cv-entry">
+              <div class="cv-entry__header">
+                <h3 class="cv-entry__title">{{ role.position }}</h3>
+                <span class="cv-entry__dates">{{ role.dates }}</span>
+              </div>
+              <p class="cv-entry__meta">{{ role.company }} | {{ role.location }}</p>
+              <ul class="cv-entry__highlights">
+                {% for point in role.highlights %}
+                  <li>{{ point }}</li>
+                {% endfor %}
+              </ul>
+            </article>
+          {% endfor %}
+        </section>
+
+        <section class="cv-section cv-section--wide">
+          <h2 class="cv-section__title">Teaching</h2>
+          {% for role in site.data.cv_site.teaching %}
+            <article class="cv-entry">
+              <div class="cv-entry__header">
+                <h3 class="cv-entry__title">{{ role.position }}</h3>
+                <span class="cv-entry__dates">{{ role.dates }}</span>
+              </div>
+              <p class="cv-entry__meta">{{ role.company }} | {{ role.location }}</p>
+              <ul class="cv-entry__highlights">
+                {% for point in role.highlights %}
+                  <li>{{ point }}</li>
+                {% endfor %}
+              </ul>
+            </article>
+          {% endfor %}
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title">Selected Publications</h2>
+          {% for paper in site.data.cv_site.publications %}
+            <article class="cv-entry">
+              <h3 class="cv-entry__title">{{ paper.title }}</h3>
+              <p class="cv-entry__meta">{{ paper.journal }} | {{ paper.date }}</p>
+              <a class="cv-entry__link" href="{{ paper.doi }}">DOI</a>
+            </article>
+          {% endfor %}
+        </section>
+
+        <section class="cv-section">
+          <h2 class="cv-section__title">Honors</h2>
+          <ul class="cv-entry__highlights">
+            {% for honor in site.data.cv_site.honors %}
+              <li>{{ honor }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+      </div>
+    </article>
+  </section>
+</div>

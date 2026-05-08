@@ -1,0 +1,40 @@
+- slug: why-hearing-loss-matters
+  category: hearing-loss
+  title: Why is hearing loss a problem?
+  kicker: Why we study it
+  blurb: Hearing loss affects communication, relationships, independence, and access to the world around us.
+  body:
+    - Hearing is one of the main ways people connect with others, stay aware of their environment, and participate fully in school, work, family life, and community life.
+    - When hearing becomes difficult, conversations can become tiring, misunderstandings become more common, and people may begin to withdraw from social situations even when they want to stay engaged.
+    - "That is one reason hearing loss matters so much: it is not only about sound being softer. It can also affect confidence, learning, safety, emotional well-being, and quality of life."
+    - We study hearing loss because giving people better access to sound and speech can help restore connection, support independence, and make everyday life more navigable and humane.
+- slug: hci-experimental-systems
+  category: human-computer-interaction
+  title: How does human-computer interaction shape this research?
+  kicker: Tools for better experiments
+  blurb: I study and build interactive systems that make research environments more natural, expressive, and measurable.
+  body:
+    - Human-computer interaction matters in my work because the way people interact with technology changes what we can measure, how natural an experiment feels, and how meaningful the results are.
+    - I am especially interested in immersive and interactive research environments, including virtual reality and other digital systems that let us study perception, behavior, and cognition in more realistic ways.
+    - This theme connects engineering with neuroscience by asking how tools, interfaces, and experimental design can make difficult human questions easier to investigate.
+    - It also reflects a practical goal: building systems that are not only technically sound, but also intuitive, flexible, and useful for real research problems.
+- slug: puzzles-and-insight
+  category: creativity
+  title: How can puzzles help us study insightful problem solving?
+  kicker: Recent research direction
+  blurb: Puzzles can reveal how people move from confusion to sudden understanding during problem solving.
+  body:
+    - One way to study creativity is to look closely at insight, the kind of problem solving where a solution seems to appear all at once after a period of uncertainty.
+    - Puzzles are useful in this kind of research because they create controlled moments of search, frustration, restructuring, and sudden discovery.
+    - By studying how people solve puzzles, researchers can ask what changes in attention, strategy, and brain activity when someone moves from being stuck to finding a useful new idea.
+    - This connects well with my recent research direction at the University of Tokyo, where I am interested in the neural mechanisms that support insightful problem solving.
+- slug: creativity-and-ai
+  category: creativity
+  title: Why study creativity and problem solving in the age of AI?
+  kicker: Why this matters now
+  blurb: Creativity and problem solving matter because innovation still depends on human judgment, adaptation, and meaningful ideas.
+  body:
+    - In the age of AI, it becomes even more important to understand what human creativity actually is and how people generate ideas that are both novel and useful.
+    - AI systems can assist with ideation, evaluation, and iteration, but people still play a central role in framing problems, judging value, and deciding what kinds of solutions are worth pursuing.
+    - Studying creativity and problem solving helps us understand how innovation emerges, how better tools can support it, and how humans and intelligent systems might work together more effectively.
+    - This matters not only for research, but also for education, design, health, and any field where meaningful progress depends on original thinking and good decisions.
