@@ -1,8 +1,6 @@
-- title: Home
-  panel: home
-- title: About
-  panel: about
-- title: Research
-  panel: research
+- title: GitHub
+  url: https://github.com/johnkylecooper
+- title: LinkedIn
+  url: https://www.linkedin.com/in/john-kyle-cooper-ab9262148
 - title: CV
-  panel: cv
+  url: /assets/documents/John_Kyle_Cooper_CV.pdf

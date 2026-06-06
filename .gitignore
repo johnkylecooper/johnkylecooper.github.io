@@ -5,3 +5,4 @@ rendercv_output/
 vendor/
 _site/
 .jekyll-cache/
+__pycache__/

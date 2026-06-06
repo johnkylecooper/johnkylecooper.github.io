@@ -1,6 +1,5 @@
 title: John Kyle Cooper
-email: johnkylecooper@gmail.com
-description: Personal website and living resume for John Kyle Cooper.
+description: John Kyle Cooper builds AI-assisted and experimental tools for exploring thinking, learning, creativity, and problem solving.
 url: "https://johnkylecooper.github.io"
 baseurl: ""
 markdown: kramdown
@@ -26,4 +25,8 @@ exclude:
   - .vscode/
   - README.md
   - in-progress/
+  - _inbox/
+  - _drafts/
+  - _recommendations/
   - JKC_CV.yaml
+  - cvtheme/

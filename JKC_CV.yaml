@@ -1,16 +1,26 @@
 cv:
   name: John Kyle Cooper
   location: Tokyo, Japan
-  email: johnkylecooper@gmail.com
   website: https://johnkylecooper.github.io
   social_networks:
     - network: LinkedIn
-      username: john-kyle-cooper
+      username: john-kyle-cooper-ab9262148
     - network: GitHub
       username: johnkylecooper
   sections:
     Professional Summary:
-      - Analytical Biomedical Engineer with a focus on human-computer interaction and neuroimaging. Proven track record of developing immersive VR research environments in Unity/Unreal Engine and optimizing data pipelines for complex biological systems. Seeking to integrate advanced XR technology with rigorous cognitive neuroscience research to solve real-world clinical challenges.
+      - Research builder and data analyst working at the intersection of human behavior, experimental systems, and AI-assisted scientific workflows. I use programming, data analysis, and pragmatic AI tools to turn complex research questions into experiments, prototypes, analyses, and usable evidence.
+    Research and Technical Strengths:
+      - label: Research Practice
+        details: Problem framing, experimental design, human-subject research, scientific writing
+      - label: Programming and Analysis
+        details: Python, MATLAB, R, and JavaScript for research data analysis, automation, scripting, and experimental workflows
+      - label: Experimental Systems
+        details: Audiovisual tasks, stimulus workflows, EEG systems, Unity and VR environments
+      - label: Agentic AI Workflows
+        details: Codex, skills, context and memory management, PRD/ARD/Markdown planning docs, structured grilling, and coding support
+      - label: Collaboration
+        details: Cross-disciplinary teams, participant studies, technical documentation, presentations
     Education:
       - institution: KU Leuven
         area: Biomedical Sciences
@@ -30,166 +40,118 @@ cv:
         location: College Station, Texas
         end_date: 2019-05
         highlights:
-          # - Biomedical Engineering Fast-Track Program
           - Germany Biosciences Program, Bonn, Germany
           - Greece Engineering Ethics, Thessaloniki, Greece
-    Technical Skills:
-        - label: Programming
-          details: Python, MATLAB, R, SQL, JavaScript, HTML, CSS
-        - label: Frameworks
-          details: scikit-learn, pandas, PyTorch, GitLab
-        - label: Neuroimaging
-          details: Advanced EEG (mne-python, Brain Vision, Biosemi software) and MRI data analysis
-        - label: Virtual Reality (VR) Development
-          details: Unity (C#), Pupil Labs, HTC Vive, Meta Quest, and Unreal Engine
-        - label: 3-D design & printing
-          details: SolidWorks & Blender
-        - label: Languages
-          details: Dutch (A2 level), Japanese (N4 level)
-    Research Experience:
+    Research and Technical Experience:
       - company: IRCN, The University of Tokyo
         position: Project Researcher
         location: Tokyo, Japan
         start_date: 2025-11
         end_date: "present"
         highlights:
-          - Investigating the neural mechanisms of insightful problem solving.
+          - Study insight, creativity, and problem solving using controlled puzzle tasks and human-centered experimental methods.
+          - Develop research workflows for turning ambiguous questions about creativity into measurable tasks, participant procedures, and analyzable data.
+          - Explore AI-supported methods for evaluating creative ideas and supporting research design.
       - company: KU Leuven
         position: FWO Strategic Basic Research PhD Fellow
         location: Leuven, Belgium
         start_date: 2021-11
         end_date: 2025-10
         highlights:
-          - PIs Dr. Tom Francart, Dr. Astrid van Wieringen
-          - Engineered experiment and data pipelines in GitLab for processing neuroimaging data used in time-series forecasting models from scikit-learn to predict speech understanding.
-          - Enhanced shared data pipeline codebase in Gitlab with new features, optimizations, and documentation during monthly hackathons.
-          - Redesigned VR environment using Unity and Javascript to investigate audiovisual effects using neuroimaging.  
+          - Built and maintained experiment and data workflows for neuroimaging studies of audiovisual speech perception and hearing outcomes.
+          - Applied Python, MATLAB, R, and scikit-learn to process time-series data and support forecasting models for speech understanding.
+          - Redesigned an interactive Unity-based audiovisual experiment to support controlled studies of realistic listening and human-computer interaction conditions.
       - company: University of Rochester
         position: Research Assistant
         location: Rochester, New York
         start_date: 2019-08
         end_date: 2021-05
         highlights:
-          - PI Dr. Ross Maddox
-          - Designed and implemented an experimental neuroimaging setup using Python to achieve sub-millisecond latency in video playback for audiovisual experiments.
-          - Managed participant recruitment & scheduling, ordering supplies, and assisting with lab experiments.
+          - Designed and implemented a Python-based experimental setup for audiovisual neuroimaging research, achieving sub-millisecond video playback timing.
+          - Supported studies of speech perception and audiovisual congruence by coordinating experimental procedures, participant scheduling, and lab operations.
       - company: Texas A&M University
         position: Research Assistant
         location: College Station, Texas
         start_date: 2016-08
         end_date: 2019-05
         highlights:
-          - PI Dr. Brian Applegate
-          - Developed virtual reality experience in Unreal Engine to view 3D volumetric scans of mouse cochlea.
-          - Designed and fabricated power supply boxes used in experimental Optical Coherence Tomography (OCT) scanning setup.
-      - company: Lynntech Inc.
-        position: Design Teammate
-        location: College Station, Texas
-        start_date: 2018-09
+          - Built VR and hardware prototypes for optical coherence tomography research, including an Unreal Engine viewer for 3D cochlear scans and fabricated power supply boxes for experimental scanning.
+      - company: Lynntech Inc. and Enmodes GmbH
+        position: Biomedical Engineering Design Teammate
+        location: College Station, Texas and Aachen, Germany
+        start_date: 2017-01
         end_date: 2019-05
         highlights:
-          - Designed and developed an orthotic rehabilitation device with a team of biomedical engineers.
-      - company: Enmodes GmbH
-        position: Design Teammate
-        location: Aachen, Germany
-        start_date: 2017-01
-        end_date: 2017-05
+          - Contributed to early-stage biomedical device design projects, including an orthotic rehabilitation device and a prototype respiratory support system.
+    Selected Publications:
+      - title: Objectively measuring audiovisual effects in noise using virtual human speakers
+        authors:
+          - J. K. Cooper
+          - J. Vanthornhout
+          - A. van Wieringen
+          - T. Francart
+        doi: https://doi.org/10.1177/23312165251333528
+        journal: Trends in Hearing
+        date: 2025-04
+      - title: Neural Tracking of Audiovisual Effects in Noise Using Deep Neural Network-Generated Virtual Humans
+        authors:
+          - J. K. Cooper
+          - J. Vanthornhout
+          - A. van Wieringen
+          - T. Francart
+        doi: https://doi.org/10.1101/2025.06.02.656280
+        journal: bioRxiv
+        date: 2025-06
+      - title: 'Musical training does not enhance neural sound encoding at early stages of the auditory system: A large-scale multisite investigation'
+        authors:
+          - K. L. Whiteford
+          - ...
+          - J. K. Cooper
+          - ...
+          - A. J. Oxenham
+        doi: https://doi.org/10.1101/2024.09.02.610856
+        journal: Nature Communications
+        date: 2024-09
+    Communication and Outreach:
+      - company: IRCN, The University of Tokyo
+        position: Student Outreach Instructor
+        location: Tokyo, Japan
+        date: 2026
         highlights:
-          - Modeled a prototype of the Ras-Q (world’s first long-term respiratory system) and presented to the company.
-    # Teaching Experience:
-    #   - company: KU Leuven
-    #     position: R Programming Teaching Assistant
-    #     location: Leuven, Belgium
-    #     date: 2024
-    #     highlights:
-    #       - Taught audiology students the basics of the R programming language and statistics.
-    #   - company: University of Rochester
-    #     position: Biomaterials Teaching Assistant
-    #     location: Rochester, New York
-    #     date: 2020
-    #     highlights:
-    #       - Taught students the basic concepts of biomaterials by leading lab sessions, review sessions, and weekly office hours. Collaborated with the professor to improve the teaching methods and learning environment.
-    Publications:
-        - title: 'Musical training does not enhance neural sound encoding at early stages of the auditory system: A large-scale multisite investigation'
-          authors: 
-            - K. L. Whiteford
-            - ...
-            - J. K. Cooper
-            - ...
-            - A. J. Oxenham
-          doi: https://doi.org/10.1101/2024.09.02.610856
-          url: 
-          journal: Nature Communications
-          date: 2024-09
-        - title: Objectively measuring audiovisual effects in noise using virtual human speakers
-          authors:
-          - J. K. Cooper
-          - J. Vanthornhout
-          - A. van Wieringen
-          - T. Francart 
-          doi: https://doi.org/10.1177/23312165251333528
-          url: 
-          journal: Trends in Hearing
-          date: 2025-04
-        - title: Neural Tracking of Audiovisual Effects in Noise Using Deep Neural Network-Generated Virtual Humans
-          authors:
-          - J. K. Cooper
-          - J. Vanthornhout
-          - A. van Wieringen
-          - T. Francart 
-          doi: https://doi.org/10.1101/2025.06.02.656280
-          url: 
-          journal: bioRxiv
-          date: 2025-06
-    Presentations:
-        - company: IERASG
-          position: Talk
-          location: Cologne, Germany
-          date: 2023-09
-          highlights:
-            - Effects of Mouth Movements on Speech Intelligibility in Naturalistic Audiovisual Environment.
-        - company: ISAAR
-          position: Poster
-          location: Nyborg, Denmark
-          date: 2023-08
-          highlights:
-            - Optimizing Recording Times For Auditory Trfs - Back-To-Back Modeling Approach.
-        - company: Society for Neuroscience
-          position: Poster
-          location: San Diego, California
-          date: 2022-11
-          highlights:
-            - Effects of language understanding on hemispheric lateralization in brain activity.
-        - company: BMES Conference
-          position: Poster
-          location: Atlanta, Georgia
-          date: 2018-10
-          highlights:
-            - Calibration of Multi-Tonal Complex for Optical Coherence Tomography Imaging System.
+          - Led an outreach session on creativity, LLM-supported idea evaluation, and EEG as a method for studying brain activity.
+      - company: KU Leuven
+        position: R Programming Teaching Assistant
+        location: Leuven, Belgium
+        date: 2024
+        highlights:
+          - Taught introductory R programming and statistics concepts to audiology students.
+      - company: University of Rochester
+        position: Biomaterials Teaching Assistant
+        location: Rochester, New York
+        date: 2020
+        highlights:
+          - Led lab sessions, review sessions, and office hours for biomaterials students.
     Honors:
-        - bullet: Best "New Neuromorph" Award - Telluride Neuromorphic Cognition Engineering Workshop (2022)
-        - bullet: Belgian American Educational Foundation (B.A.E.F.) Fellow (2021)
-        - bullet: Fulbright Semifinalist for Open Study/Research Award to Belgium (2021)
-        - bullet: BME Graduate Student Teaching Assistant Award Honorable Mention (2020)
-        - bullet: Undergraduate Research Scholar (2019)
-        - bullet: Undergraduate Summer Research Grant Recipient (2018)
-        - bullet: Eagle Scout (2014)
+      - bullet: FWO Strategic Basic Research Fellowship (2021-2025)
+      - bullet: Belgian American Educational Foundation Fellow (2021)
+      - bullet: Best "New Neuromorph" Award, Telluride Neuromorphic Cognition Engineering Workshop (2022)
+      - bullet: Fulbright Semifinalist for Open Study/Research Award to Belgium (2021)
+      - bullet: BME Graduate Student Teaching Assistant Award Honorable Mention (2020)
+      - bullet: Eagle Scout (2014)
 design:
-    theme: engineeringclassic    
-    page:
-      size: a4
-      show_last_updated_date: false
-    # text:
-      # font_size: 10pt
-    # header:
-      # name_font_size: 30pt
-    entry_types:
-      education_entry:
-        main_column_first_row_template: '**INSTITUTION**, AREA - LOCATION'
-        degree_column_template: '**DEGREE**'
-        degree_column_width: 1cm
-        date_and_location_column_template: DATE
-      experience_entry:
-        main_column_first_row_template: '**COMPANY**, POSITION - LOCATION'
-        date_and_location_column_template: DATE
-
+  theme: cvtheme
+  page:
+    size: a4
+    show_last_updated_date: false
+  header:
+    use_icons_for_connections: true
+    separator_between_connections: ""
+  entry_types:
+    education_entry:
+      main_column_first_row_template: '**INSTITUTION**, AREA - LOCATION'
+      degree_column_template: '**DEGREE**'
+      degree_column_width: 1cm
+      date_and_location_column_template: DATE
+    experience_entry:
+      main_column_first_row_template: '**COMPANY**, POSITION - LOCATION'
+      date_and_location_column_template: DATE
