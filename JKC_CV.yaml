@@ -1,6 +1,6 @@
 cv:
   name: John Kyle Cooper
-  location: Tokyo, Japan
+  location: Waco, Texas
   website: https://johnkylecooper.github.io
   social_networks:
     - network: LinkedIn
@@ -9,18 +9,7 @@ cv:
       username: johnkylecooper
   sections:
     Professional Summary:
-      - Research builder and data analyst working at the intersection of human behavior, experimental systems, and AI-assisted scientific workflows. I use programming, data analysis, and pragmatic AI tools to turn complex research questions into experiments, prototypes, analyses, and usable evidence.
-    Research and Technical Strengths:
-      - label: Research Practice
-        details: Problem framing, experimental design, human-subject research, scientific writing
-      - label: Programming and Analysis
-        details: Python, MATLAB, R, and JavaScript for research data analysis, automation, scripting, and experimental workflows
-      - label: Experimental Systems
-        details: Audiovisual tasks, stimulus workflows, EEG systems, Unity and VR environments
-      - label: Agentic AI Workflows
-        details: Codex, skills, context and memory management, PRD/ARD/Markdown planning docs, structured grilling, and coding support
-      - label: Collaboration
-        details: Cross-disciplinary teams, participant studies, technical documentation, presentations
+      - Researcher and builder of experimental and interactive systems, with experience in eye tracking, EEG, Unity, VR, and research software. I combine experimental design, programming, and data analysis to study human perception and creative problem solving.
     Education:
       - institution: KU Leuven
         area: Biomedical Sciences
@@ -38,51 +27,69 @@ cv:
         area: Biomedical Engineering
         degree: BSc
         location: College Station, Texas
+        start_date: 2015-08
         end_date: 2019-05
         highlights:
           - Germany Biosciences Program, Bonn, Germany
           - Greece Engineering Ethics, Thessaloniki, Greece
     Research and Technical Experience:
       - company: IRCN, The University of Tokyo
-        position: Project Researcher
+        position: Project Researcher (Postdoctoral)
         location: Tokyo, Japan
         start_date: 2025-11
-        end_date: "present"
+        end_date: 2026-09
         highlights:
-          - Study insight, creativity, and problem solving using controlled puzzle tasks and human-centered experimental methods.
-          - Develop research workflows for turning ambiguous questions about creativity into measurable tasks, participant procedures, and analyzable data.
-          - Explore AI-supported methods for evaluating creative ideas and supporting research design.
+          - Designed a creative problem-solving puzzle game and conducted experiments using eye tracking (Tobii) to help trace participants’ thought processes as they worked toward solutions.
+          - Explored AI-supported methods for evaluating creative ideas and informing research design.
       - company: KU Leuven
         position: FWO Strategic Basic Research PhD Fellow
         location: Leuven, Belgium
-        start_date: 2021-11
+        start_date: 2021-10
         end_date: 2025-10
         highlights:
-          - Built and maintained experiment and data workflows for neuroimaging studies of audiovisual speech perception and hearing outcomes.
-          - Applied Python, MATLAB, R, and scikit-learn to process time-series data and support forecasting models for speech understanding.
-          - Redesigned an interactive Unity-based audiovisual experiment to support controlled studies of realistic listening and human-computer interaction conditions.
+          - Redesigned a Unity-based audiovisual experiment to study speech perception and human-computer interaction.
+          - Built neuroimaging data workflows using Python, MATLAB, R, and scikit-learn to model speech understanding.
       - company: University of Rochester
         position: Research Assistant
         location: Rochester, New York
         start_date: 2019-08
         end_date: 2021-05
         highlights:
-          - Designed and implemented a Python-based experimental setup for audiovisual neuroimaging research, achieving sub-millisecond video playback timing.
-          - Supported studies of speech perception and audiovisual congruence by coordinating experimental procedures, participant scheduling, and lab operations.
+          - Built a Python-based audiovisual neuroimaging setup with sub-millisecond video playback timing.
+          - Coordinated experimental procedures, participant scheduling, and lab operations for speech perception studies.
       - company: Texas A&M University
         position: Research Assistant
         location: College Station, Texas
         start_date: 2016-08
         end_date: 2019-05
         highlights:
-          - Built VR and hardware prototypes for optical coherence tomography research, including an Unreal Engine viewer for 3D cochlear scans and fabricated power supply boxes for experimental scanning.
-      - company: Lynntech Inc. and Enmodes GmbH
-        position: Biomedical Engineering Design Teammate
-        location: College Station, Texas and Aachen, Germany
-        start_date: 2017-01
+          - Developed an Unreal Engine VR viewer for 3D cochlear scans.
+          - Designed and fabricated power supply boxes for optical coherence tomography experiments.
+      - company: Lynntech Inc.
+        position: Senior Design Team Member
+        location: College Station, Texas
+        start_date: 2018-08
         end_date: 2019-05
         highlights:
-          - Contributed to early-stage biomedical device design projects, including an orthotic rehabilitation device and a prototype respiratory support system.
+          - Designed and developed an orthotic rehabilitation device prototype.
+      - company: Enmodes GmbH
+        position: Medical Device Design Collaborator
+        location: Aachen, Germany
+        start_date: 2017-01
+        end_date: 2017-05
+        highlights:
+          - Modeled a respiratory support device prototype, using Blender for design and visualization.
+    Research and Technical Strengths:
+      - label: Research Practice
+        details: Problem framing, experimental design, human-subject research, scientific writing
+      - label: Programming and Analysis
+        details: Python, MATLAB, R, and JavaScript for research data analysis, automation, scripting, and experimental workflows
+      - label: Experimental Systems
+        details: Audiovisual tasks, stimulus workflows, EEG systems, eye tracking (Tobii), Unity and VR environments
+      - label: AI-Assisted Development
+        details: Codex and OpenCode for prototyping, coding support, requirements documentation, and context management
+      - label: Collaboration
+        details: Cross-disciplinary teams, participant studies, technical documentation, presentations
     Selected Publications:
       - title: Objectively measuring audiovisual effects in noise using virtual human speakers
         authors:
@@ -102,16 +109,16 @@ cv:
         doi: https://doi.org/10.1101/2025.06.02.656280
         journal: bioRxiv
         date: 2025-06
-      - title: 'Musical training does not enhance neural sound encoding at early stages of the auditory system: A large-scale multisite investigation'
+      - title: Large-scale multi-site study shows no association between musical training and early auditory neural sound encoding
         authors:
           - K. L. Whiteford
           - ...
           - J. K. Cooper
           - ...
           - A. J. Oxenham
-        doi: https://doi.org/10.1101/2024.09.02.610856
+        doi: https://doi.org/10.1038/s41467-025-62155-5
         journal: Nature Communications
-        date: 2024-09
+        date: 2025-08
     Communication and Outreach:
       - company: IRCN, The University of Tokyo
         position: Student Outreach Instructor
@@ -132,6 +139,7 @@ cv:
         highlights:
           - Led lab sessions, review sessions, and office hours for biomaterials students.
     Honors:
+      - bullet: JSPS KAKENHI Grant-in-Aid for Research Activity Start-up (2026)
       - bullet: FWO Strategic Basic Research Fellowship (2021-2025)
       - bullet: Belgian American Educational Foundation Fellow (2021)
       - bullet: Best "New Neuromorph" Award, Telluride Neuromorphic Cognition Engineering Workshop (2022)
@@ -146,6 +154,10 @@ design:
   header:
     use_icons_for_connections: true
     separator_between_connections: ""
+  text:
+    alignment: left
+  entries:
+    vertical_space_between_entries: 1.3em
   entry_types:
     education_entry:
       main_column_first_row_template: '**INSTITUTION**, AREA - LOCATION'
@@ -153,5 +165,6 @@ design:
       degree_column_width: 1cm
       date_and_location_column_template: DATE
     experience_entry:
-      main_column_first_row_template: '**COMPANY**, POSITION - LOCATION'
+      main_column_first_row_template: '**COMPANY**'
+      main_column_second_row_template: "*POSITION · LOCATION*\nHIGHLIGHTS"
       date_and_location_column_template: DATE
